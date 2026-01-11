@@ -1,9 +1,19 @@
 @charset "UTF-8";
+
+.fugaz-one-regular  
+{  
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 *
 {
     margin: 0px;
     padding: 0px;
+    transition: 0.2s linear;
 }
+
 :root
 {
     --cor-forte: #00185f;
@@ -11,10 +21,10 @@
     --cor-fraca: #6CA2D5;
     --cor-transparente: #728FAA; 
 }
+
 body
 {
     background-color: var(--cor-fraca);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 header
@@ -22,6 +32,8 @@ header
     background-attachment: fixed;
     background-image: linear-gradient(to top, var(--cor-transparente), var(--cor-forte));
     max-height: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header > h1
@@ -32,6 +44,7 @@ header > h1
     max-width: 700px;
     text-align: center;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header > p
@@ -42,9 +55,8 @@ header > p
     padding: 30px;
     margin: auto;
     color: white;
-}
-
-img {height: 32px; width: 32px;}
+    font-family: Arial, Helvetica, sans-serif;
+} 
 
 nav
 {
@@ -56,31 +68,110 @@ nav
     height: 50px;
 }
 
-nav  img
+nav img
 {   
     display: block;
     width: 32px;
     height: 32px;
-
-}
-
-nav > a
-{
-    padding: 0px 0px 0px 20px
+    
 }
 
 nav img:hover
 {
- background-color: rgba(255, 255, 255, 0.377);
+  width: 40px;
+  height: 40px;
+}
+
+nav > a
+{   
+    
+    padding: 0px 0px 0px 20px
 }
 
 main
 {   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cor-transparente);
+    background-color: white;
     max-width: 800px;
-    height: 1200px;
+    height: 900px;
     margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.361);
 }
+
+article > h1 
+{   
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: "Fugaz One";
+    font-weight: bold;
+    text-align: center;
+    color:  var(--cor-forte);
+    max-width: 315px;
+    box-shadow:  0px 3px 3px rgba(0, 0, 0, 0.33);
+    border-radius: 0px 0px 10px 10px;
+}   
+
+article > h1:hover
+{
+    font-weight: 500;
+    color: orangered;
+    
+}
+
+article h1 span:hover
+{
+    text-decoration: underline;
+}
+
+article > p
+{   
+    max-width: 650px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-indent: 30px;
+    line-height: 1.5em;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.249);
+    margin: auto;
+    font-size: 20px;
+}
+
+aside
+{
+    background-color: var(--cor-fraca);
+    margin: 30px auto 10px auto;
+    height: 600px;
+    text-align: center;
+    max-width: 750px;
+    display: block;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.225);
+}
+
+aside > h2
+{   
+    
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor-forte), transparent);
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-family: "Fugaz One";
+    font-weight: normal;
+}
+
+aside > h3
+{   
+    font-size: 1.5em;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, rgb(36, 36, 135)
+    , transparent);
+    text-align: left;
+    padding: 10px;
+}
+
