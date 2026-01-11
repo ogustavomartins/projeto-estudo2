@@ -78,10 +78,9 @@ nav img
     
 }
 
-nav img:hover
+nav img:hover 
 {
-  width: 40px;
-  height: 40px;
+    transform: scale(1.25);
 }
 
 nav > a
@@ -202,16 +201,17 @@ aside p
     font-size: 18px;
 }
 
-section p
-{
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding-top: 20px;
-    font-weight: bold;
-    height: 50px;
-    
+section {
+    padding: 20px 0 30px 0;
 }
+
+section p {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
 
 footer
 {
