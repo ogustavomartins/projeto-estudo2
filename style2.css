@@ -25,13 +25,13 @@
 
 body
 {
-    background-color: var(--cor-fraca);
+    background-image: linear-gradient(to bottom, var(--cor-media), var(--cor-fraca));
 
 }
 
 main
 {   
-    background-color: white;
+    background-color: rgb(127, 173, 251);
     max-width: 800px;
     margin: auto;
     border-radius: 0px 0px 10px 10px;
@@ -44,10 +44,10 @@ article h1
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to bottom, var(--cor-media), var(--cor-forte));
-    margin-bottom: 20px;
     color: white;
     height: 100px;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -55,8 +55,11 @@ img
 {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%;
     margin: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 article h2
@@ -76,7 +79,7 @@ article p
     text-align: justify;
     line-height: 1.5em;
     font-size: 18px;
-    background-color: rgba(125, 124, 124, 0.436);
+    background-color: rgb(255, 255, 255);
     font-weight: 500
 }
 
