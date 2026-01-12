@@ -50,11 +50,13 @@ article h1
     align-items: center;
 
 }
+
 img 
 {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 article h2
